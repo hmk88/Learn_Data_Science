@@ -134,8 +134,27 @@ basis_plot(model, title='Ridge Regression')
 ############Now the model is smooth 
 
 ######Lasso Regression (L1 regularization)
+from sklearn.linear_model import Lasso
+model = make_pipeline(GaussianFeatures(30), Lasso(alpha=0.001))
+basis_plot(model, title='Lasso Regression')
 
 
 
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
