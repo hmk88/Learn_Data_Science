@@ -62,3 +62,7 @@ size = 50 * probs.max(1) ** 2  # square emphasizes differences
 plt.scatter(X[:, 0], X[:, 1], c=labels, cmap='viridis', s=size);
 
 
+
+#######Example of clustering data into an ellipse produce error
+############for pos, covar, w in zip(gmm.means_, gmm.covars_, gmm.weights_): AttributeError: 'GaussianMixture' object has no attribute 'covars_'
+
